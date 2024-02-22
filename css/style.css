@@ -70,14 +70,25 @@ img {
     gap: 40px;
 }
 
-
-.address-menu {
-    display: flex;
-    gap: 40px;
-    margin-left: 320px;
+.nav-menu li:first-child a  {
+    color:  #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav-menu li:first-child a::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
+
+
 .nav-link {
+    position: relative;
     padding: 24px 0;
     color: #2E2F42;
     font-size: 16px;
@@ -86,6 +97,8 @@ img {
     letter-spacing: 0.02em;
 
 }
+
+
 
 .nav-link:active {
     color: #404BBF;
@@ -98,9 +111,8 @@ img {
 .nav-link:focus {
     color: #404bbf;
 }
-.address {
-    font-style: normal;
-}
+
+
 
 .link-add {
     color: #434455;
@@ -119,6 +131,23 @@ img {
 }
 
 
+.address-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.address-menu li:first-child a {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-menu li:nth-child(2) {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address {
+    font-style: normal;
+    margin-left:  auto;
+}
 /*  */
 
 /* HERO */
