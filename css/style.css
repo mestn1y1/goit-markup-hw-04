@@ -386,7 +386,7 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-.portfolio-item:hover .portfolio-name p {
+.portfolio-item:hover .portfolio-item-img p {
   transform: translateY(0%);
 }
 
