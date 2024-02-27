@@ -1,5 +1,7 @@
 :root {
   --svg-color: #f4f4fd;
+  --some-text-color: #ffffff;
+  --icon-bg: #4d5ae5;
 }
 
 body {
@@ -454,6 +456,16 @@ img {
   background-color: #2e2f42;
 }
 
+.footer-wrapper {
+  display: flex;
+  align-items: baseline;
+  margin-right: 120px;
+}
+
+.footer-container {
+  margin-right: 120px;
+}
+
 .footer-logo {
   color: #f4f4fd;
 }
@@ -469,4 +481,41 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.social-media-descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--some-text-color);
+  margin-bottom: 16px;
+}
+
+.social-media-list {
+  display: flex;
+  gap: 16px;
+}
+
+.social-media-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-media-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--icon-bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-link:hover {
+  background-color: #31d0aa;
+}
+
+.social-media-link:focus {
+  background-color: #31d0aa;
 }
